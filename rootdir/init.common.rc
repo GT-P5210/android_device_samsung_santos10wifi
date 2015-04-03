@@ -123,7 +123,7 @@ on fs
     mkdir /factory 0775 system system
     mkdir /config 0775 system system
     mkdir /media 0775 media media
-    mount_all /fstab.${ro.hardware}
+    mount_all /fstab.santos10wifi
     mkdir /config/wifi
     chown system wifi /config/wifi
     chmod 0770 /config/wifi
@@ -131,7 +131,7 @@ on fs
 on post-fs
 
 # virtual sdcard daemon running as media_rw (1023)
-service sdcard /system/bin/sdcard -u 1023 -g 1023 -l -r /data/media /mnt/shell/emulated
+service sdcard /system/bin/sdcard -u 1023 -g 1023 -l /data/media /mnt/shell/emulated
     class late_start
     oneshot
 
