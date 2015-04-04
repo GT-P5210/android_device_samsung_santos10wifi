@@ -90,8 +90,7 @@ PRODUCT_COPY_FILES += \
     device/samsung/santos10wifi/rootdir/props.platform.rc:root/props.platform.rc \
     device/samsung/santos10wifi/rootdir/ueventd.santos10wifi.rc:root/ueventd.santos10wifi.rc \
     \
-    device/samsung/santos10wifi/vendor/partlink:root/sbin/partlink \
-    device/samsung/santos10wifi/vendor/ia_watchdogd:root/usr/bin/ia_watchdogd
+    device/samsung/santos10wifi/vendor/partlink:root/sbin/partlink
 
 PRODUCT_PACKAGES += \
     libGLES_android
