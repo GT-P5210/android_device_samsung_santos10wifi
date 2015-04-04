@@ -95,6 +95,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libGLES_android
 
+# Lights
+PRODUCT_PACKAGES += \
+    lights.santos10wifi
+
 # Audio
 #PRODUCT_PACKAGES += \
 #    libtinyalsa \
