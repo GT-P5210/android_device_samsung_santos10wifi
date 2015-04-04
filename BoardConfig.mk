@@ -41,12 +41,13 @@ BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_bcmdhd
 BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_bcmdhd
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 BOARD_WPA_SUPPLICANT_DRIVER := NL80211
-WIFI_DRIVER_MODULE_PATH := "/system/lib/modules/dhd.ko"
+WIFI_DRIVER_MODULE_PATH := "/lib/modules/dhd.ko"
 WIFI_DRIVER_MODULE_NAME := "dhd"
-WIFI_DRIVER_FW_PATH_PARAM := "/sys/module/bcmdhd/parameters/firmware_path"
-WIFI_DRIVER_FW_PATH_AP := "/vendor/firmware/bcmdhd_apsta.bin_b2"
-WIFI_DRIVER_FW_PATH_STA := "/vendor/firmware/bcmdhd_sta.bin_b2"
-WIFI_DRIVER_FW_PATH_P2P := "/vendor/firmware/bcmdhd_p2p.bin_b2"
+WIFI_DRIVER_FW_PATH_PARAM := "/sys/module/dhd/parameters/firmware_path"
+WIFI_DRIVER_FW_PATH_AP := "/vendor/firmware/bcmdhd_apsta.bin"
+WIFI_DRIVER_FW_PATH_STA := "/vendor/firmware/bcmdhd_sta.bin"
+WIFI_DRIVER_FW_PATH_P2P := "/vendor/firmware/bcmdhd_p2p.bin"
+WIFI_DRIVER_MODULE_ARG := "iface_name=wlan0 firmware_path=/vendor/firmware/bcmdhd_sta.bin nvram_path=/vendor/firmware/nvram_net.txt"
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
