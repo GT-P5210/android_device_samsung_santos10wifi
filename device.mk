@@ -99,6 +99,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     lights.santos10wifi
 
+# IR
+PRODUCT_PACKAGES += \
+    consumerir.santos10wifi
+
 # Audio
 #PRODUCT_PACKAGES += \
 #    libtinyalsa \
