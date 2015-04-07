@@ -178,7 +178,9 @@ PRODUCT_COPY_FILES += \
     device/samsung/santos10wifi/prebuilts/sec_keyboard.idc:system/usr/idc/sec_keyboard.idc \
     \
     device/samsung/santos10wifi/prebuilts/sec_key.kl:system/usr/keylayout/sec_key.kl \
-    device/samsung/santos10wifi/prebuilts/sec_touchscreen.kl:system/usr/keylayout/sec_touchscreen.kl
+    device/samsung/santos10wifi/prebuilts/sec_touchscreen.kl:system/usr/keylayout/sec_touchscreen.kl \
+    \
+    device/samsung/santos10wifi/configs/excluded-input-devices.xml:system/etc/excluded-input-devices.xml
 
 # Thermal itux
 #ENABLE_ITUXD := true
