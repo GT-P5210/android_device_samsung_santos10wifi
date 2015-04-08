@@ -53,25 +53,9 @@ DEVICE_PACKAGE_OVERLAYS := \
 # Boot files (needs work)
 PRODUCT_COPY_FILES += \
     device/samsung/santos10wifi/rootdir/fstab.santos10wifi:root/fstab.santos10wifi \
-    device/samsung/santos10wifi/rootdir/init.avc.rc:root/init.avc.rc \
-    device/samsung/santos10wifi/rootdir/init.common.rc:root/init.common.rc \
-    device/samsung/santos10wifi/rootdir/init.debug.rc:root/init.debug.rc \
-    device/samsung/santos10wifi/rootdir/init.diag.rc:root/init.diag.rc \
-    device/samsung/santos10wifi/rootdir/init.gps.cpd.rc:root/init.gps.cpd.rc \
-    device/samsung/santos10wifi/rootdir/init.gps.rc:root/init.gps.rc \
-    device/samsung/santos10wifi/rootdir/init.partlink.rc:root/init.partlink.rc \
-    device/samsung/santos10wifi/rootdir/init.platform.usb.rc:root/init.platform.usb.rc \
     device/samsung/santos10wifi/rootdir/init.santos10wifi.rc:root/init.santos10wifi.rc \
-    device/samsung/santos10wifi/rootdir/init.watchdog.rc:root/init.watchdog.rc \
-    device/samsung/santos10wifi/rootdir/init.wifi.rc:root/init.wifi.rc \
-    device/samsung/santos10wifi/rootdir/init.wifi.vendor.rc:root/init.wifi.vendor.rc \
-    device/samsung/santos10wifi/rootdir/init.wireless.rc:root/init.wireless.rc \
-    device/samsung/santos10wifi/rootdir/props.rc:root/props.rc \
-    device/samsung/santos10wifi/rootdir/props.board.rc:root/props.board.rc \
-    device/samsung/santos10wifi/rootdir/props.platform.rc:root/props.platform.rc \
-    device/samsung/santos10wifi/rootdir/ueventd.santos10wifi.rc:root/ueventd.santos10wifi.rc \
-    \
-    device/samsung/santos10wifi/vendor/partlink:root/sbin/partlink
+    device/samsung/santos10wifi/rootdir/init.santos10wifi.usb.rc:root/init.santos10wifi.usb.rc \
+    device/samsung/santos10wifi/rootdir/ueventd.santos10wifi.rc:root/ueventd.santos10wifi.rc
 
 # Custom packages
 PRODUCT_PACKAGES += \
