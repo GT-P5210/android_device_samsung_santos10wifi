@@ -89,6 +89,15 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
     device/samsung/santos10wifi/configs/media_codecs.xml:system/etc/media_codecs.xml
 
+# Key layout files
+PRODUCT_COPY_FILES += \
+    device/samsung/santos10wifi/prebuilts/sec_keyboard.idc:system/usr/idc/sec_keyboard.idc \
+    \
+    device/samsung/santos10wifi/prebuilts/sec_key.kl:system/usr/keylayout/sec_key.kl \
+    device/samsung/santos10wifi/prebuilts/sec_touchscreen.kl:system/usr/keylayout/sec_touchscreen.kl \
+    \
+    device/samsung/santos10wifi/configs/excluded-input-devices.xml:system/etc/excluded-input-devices.xml
+
 # Device configuration
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:system/etc/permissions/android.hardware.bluetooth.xml \
